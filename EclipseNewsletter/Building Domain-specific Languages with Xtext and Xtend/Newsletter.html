@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Newsletter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Building Domain-specific languages with Xtext and Xtend</h1>
+<p>Specifying the requirements of a software system and converting such a specification into executable source code is difficult and error-prone.
+Requirements specifications written in prose are often ambiguous and hard to understand for developers.
+Therefore, the process of turning this documents into software is slow and error-prone.
+Domain-specific languages (DSL) challenge this problem by defining a semantically rich notation to describe domain concepts clear and concise.
+From the DSL models the boilerplate code can be deduced, thereby increasing the software development process efficiency as well as the overall quality.
+After giving an overview of the key concepts of a domain-specific language, the domain-specific language framework Eclipse Xtext will be introduced.
+In addition, it will be illustrated how DSL models can be processed efficiently using  Eclipse Xtend.</p>
+<h2>Domain-specific languages</h2>
+<p>Domain-specific languages are an integral part of our daily business.
+For example, when developers and business experts talk about requirements they will use terms like <em>Client</em>, <em>Contract</em>, or <em>Payment</em> to describe the expected behavior.
+However, as soon as executable source code is required developers start translating these concepts into classes, data structures, and algorithms.
+At this point, some of the domain-specific information might get lost in translation.
+Thereby, business analysts have a hard time ensuring that all their business rules have been translated correctly. 
+In addition, developers struggle with implementing changes, because they first have to understand the changes within the domain model before they can estimate and implement the subsequent changes to the source code.</p>
+<p>A domain-specific language is built to describe the concepts of a certain domain concisely with a semantically rich notation.
+Thereby, terms like <em>Client</em> or <em>Contract</em> are used in a language that is the foundation for domain model enhancements as well as for automated translation into executable software.
+In contrast to general purpose programming languages, concepts of a certain domain are described on a higher level of abstraction, so that they are understandable for business experts and developers.</p>
+<p>Domain-specific languages are likely to be used in the context of model-driven development, however, there are many more usage scenarios.
+For example, they might be part of a larger software system used to express calculations or configurations.
+Further, they might be used as a thin layer on top of an existing language to provide feature-rich editor support.</p>
+<p>Domain-driven design is an approach to describe the domain concepts in a language shared by business experts and developers.
+One central concept of this ubiquitous language are 'Entities'.
+The following example shows a simplistic textual DSL created with Xtext.
+The Entity DSL allows the specification of real-world entities with their relevant properties in a concise and clear notation.</p>
+<p><img src="./images/entity_sample.png" alt="Entity Sample" /></p>
+<p>The simple example above shows two entities from the insurance domain that have a relation between each other.
+By describing the domain concepts on a rather high-level of abstraction (notice that there are no programming language specific datatypes or notations) DSLs can be used by non-programmers.
+The technology independent language can close the gap between business experts and developers by becoming the common ground to discuss domain concepts benefiting both sides.
+On the one hand, the use of a formal language enables business analysts to specify domain concepts in a precise and unambiguous language. 
+A task that is particularly hard using tools such as Word or Excel.
+On the other hand, the boilerplate code can be deduced from the DSL accelerating the development process.
+Moreover, the general code quality is increased, because the boilerplate code that is often the main spot for copy and paste errors is automatically created.
+Further, the source code structure is consistent benefiting maintenance and future development. </p>
+<p>In addition to being the center of the development process, domain-specific languages might be integrated into larger software systems.
+There are for example statechart tools embedding a domain-specific language to describe the input types and the internal variables of a state. 
+By using a formal language with a given set of keywords and language constructs mature editor support can be provided.
+Further, the expressions can be interpreted automatically to simulate the model behavior.
+Thereby, business experts can get immediate feedback without the necessity of a running application. 
+In addition, it is also possible to generate source code e.g. in Java or C++ from the statechart model.</p>
+<p>By providing a concise and semantically rich notation of the domain, DSLs increase efficiency and the overall quality of the product or process.
+Yet, in order to be successfully introduced a mature editor that integrates well with existing processes is required.</p>
+<h2>Introducing Xtext</h2>
+<p><a href="https://www.eclipse.org/Xtext/">Eclipse Xtext™</a> was built to quickly create domain-specific languages including an integrated, feature-rich editor.
+To be more precise: Xtext is a framework for building language workbenches for textual domain-specific languages.</p>
+<p>Let's first have a look at the small but important word &quot;textual&quot;.
+When talking about modeling most of us instinctively remember creating large graphical class diagrams.
+Instead of modeling lines and boxes on a canvas, textual modeling changes the user interface to a simple, yet feature-rich text editor.
+Not only creating and maintaining but also sharing - or should I say merging - text files is easier and often well supported by the IDE. </p>
+<p>The text files created using the Xtext editor are analyzed by a parser, that instantiates an <a href="https://en.wikipedia.org/wiki/Eclipse_Modeling_Framework">Ecore</a> model representing the abstract syntax tree (AST).
+The AST is not only the basis for the Eclipse integration but also allows frameworks such as <a href="https://www.eclipse.org/gef/">GEF</a> to automatically create a graphical representation.
+Although it is easier to create and maintain models via text files, it is often beneficial to have a graphical representation to discuss the broader domain concepts and their relations.</p>
+<p>The next thing mentioned by the definition above is the &quot;language workbench&quot;.
+The term aggregates some of the concepts already mentioned.
+First, a feature-rich editor that offers code-completion, syntax-highlighting, formatting, error detection and so on.
+Second, a sophisticated language workbench offers different views on the same model as well as navigation and refactoring support.
+Finally, a language workbench should integrate with existing tools and frameworks to embed the DSL in existing processes.
+Xtext languages can be integrated into different IDEs such as Eclipse, IntelliJ IDEA, VSCode, and all editors that support the <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol</a>.
+A feature-rich, well-integrated workbench is a key factor to success for a domain-specific language.</p>
+<p>After having spent some time on the benefits of a textual domain-specific language and the corresponding workbench, we will examine how Xtext and Xtend enable you to reach these goals. </p>
+<h2>Getting started with Xtext</h2>
+<p>Xtext is a mature framework that was build to quickly create domain-specific languages with a sophisticated workbench.
+Boiling it down to the very minimum, a Xtext DSL only requires a grammar file.
+The powerful grammar defines the language and is input for a generation process that creates the full infrastructure including the parser, linker, type checker as well as editor support for Eclipse, any editor that supports the <a href="https://blogs.itemis.com/en/integrating-xtext-language-support-in-visual-studio-code">language server protocol</a>, and your favorite web browser.</p>
+<p>Yet, the generated default often has to be customized in order to achieve company- or project-specific behavior.
+Therefore, the generated parts of the workbench can be customized by providing domain-specific implementations.
+Typical customizations include custom validations, narrowed proposals during code completion, or code formatting.
+A good default that is highly customizable, enables a fast proof of concept that can evolve over time becoming a highly specific DSL.</p>
+<p>Having talked a lot about Xtext, let's get involved and create our first DSL.
+First of all, as you may have guessed already you need an Eclipse with the Xtext framework included. 
+You find a pre-bundled Eclipse <a href="https://www.eclipse.org/downloads/packages/eclipse-ide-java-and-dsl-developers/oxygen2">here</a> or you can download the required plugins in your existing Eclipse right <a href="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/">here</a>.
+After your Eclipse is all setup, you can start creating your first DSL.
+Since I don't want to go to much into the details, I recommend you to try the <a href="https://www.eclipse.org/Xtext/documentation/102_domainmodelwalkthrough.html">Xtext 15-minute tutorial</a>.
+The tutorial shows how to create the Entity DSL we used in the example above.
+Further, there is a Domain-Model example that comes with the Xtext plugins including more than 800 JUnit test cases.
+The example project provides a good overview of the potential use of test-driven development when creating a DSL.
+The test cases not only cover parsing and validating the text files, but also demonstrate how the user interface functionality such as code completion or the outline view can be tested automatically.</p>
+<p>Having finished the tutorial, the <a href="https://www.eclipse.org/Xtext/documentation/index.html">documentation</a> offers a great overview of the different concepts embodied in Xtext.
+Further, you should keep an eye on the <a href="https://eclipse.org/forums/index.php?t=thread&amp;frm_id=27">Eclipse TMF forum</a> where you find answers to many questions.
+Finally, if you want to contribute to Xtext itself you are kindly invited to provide pull requests to the Xtext <a href="https://github.com/eclipse/xtext">GitHub repositories</a>.</p>
+<h2>Leverage the domain model with Xtend</h2>
+<p>As shown above, Xtext enables you to create and evolve DSLs quickly.
+However, at the end of the day domain-specific model regardless if it is a domain model, an expression, or a configuration is created to be further processed.
+At this point, Xtend comes into play.
+Xtend is a statically-typed-programming language built with Xtext and compiled to Java.
+Since it compiles to Java it integrates seamlessly with existing Java programs and vice versa.
+Xtend offers powerful features such as template strings, extension methods, and built-in functions such as filter, map, and reduce.
+Since Xtend is a domain-specific language it enables developers to write concepts available in Java, in a concise and semantically rich notation.</p>
+<p>Xtend include many language concepts that are especially beneficial when processing models.
+First, it offers template strings which are ideal to generate executable code from a given model.</p>
+<p><img src="./images/templateString.png" /></p>
+<p>Xtend enables the specification of multi-line strings that contain fixed text parts as well as dynamic parts computed from the given model. 
+The example above shows a very basic multi-line String. 
+Starting with triple quotes the String contains the static part <code>public class</code> followed by a dynamic part in <a href="https://en.wikipedia.org/wiki/Guillemet">gulliments</a>.
+When the string is interpreted at runtime the dynamic part is replaced by the name of the entity currently in focus.
+In the class body the template String contains another gulliment expression that calls the built-in <code>forEach</code> function on the properties of the current entity.
+Thereby, the generate method is called that returns a string representing the property type and name.
+In addition, the Xtend editor also highlights the whitespaces as they will appear in the generated file.
+In contrast to other templating engines functions to evaluate dynamic values can be included directly in the templates.</p>
+<p>Second, another important ingredient of Xtend is the support for lambda expressions.
+Besides lambda expressions there are also higher-order functions such as <code>filter</code>, <code>map</code>, <code>reduce</code> etc. already shipped with the Xtend language library.
+The example above shows how the built-in function <code>forEach</code> is used to get the textual representation for all properties modeled in the current entity.
+The combination of built-in and custom lambda functions enables concise statements, e.g. for dealing with model-to-model transformations or model simulation. </p>
+<p>Finally, there are many more features included in Xtend, such as extension methods, operator overloading, powerful switch expression, polymorphic method invocation, and so on, that make Xtend a conclusive add-on to the Java language.<br />
+Besides being a powerful programming language, Xtend provides a compact and semantically rich language for processing domain-specific models.
+To get a better feeling for the language and its features have a look at this <a href="https://www.eclipse.org/xtend/documentation/101_gettingstarted.html">tutorial</a>.</p>
+<h2>Conclusion</h2>
+<p>Domain-specific languages are used to express concepts of a certain domain in a concise and semantically rich notation.
+Employing DSLs enables model simulation, source code generation, and increases the overall quality.
+As shown above, Xtext is a framework built to quickly create domain-specific languages including a sophisticated and well-integrated editor.
+Since Xtext is highly customizable it supports the evolution of a DSL from an early prototype version to an individualized mature solution.
+Finally, the statically typed programming language Xtend provides mature features for model-to-model or model-to-text transformations.
+All in all, the combination of Xtext and Xtend will enable you to rapidly create your first domain-specific language workbench perfectly tailored for your domain.</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
