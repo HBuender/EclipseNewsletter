@@ -114,7 +114,7 @@ While experimenting with the new Xtext 2.14 he realizes that the Xtext Build con
 
 ![Xtext Console Icon](./2_14_console-icon.png)
 
-## Approaching Light Speed?
+## Accelarating Tims journey
 Tim as a passionate Xtext user implements domain-specific language workbenches at an industrial scale.
 Therefore, Tim is euphoric about the performance improvements incorporated in Xtext 2.14.
 One pain point he experienced in the past was caused by the access to `IOutputConfiguration` from the builder participant.
