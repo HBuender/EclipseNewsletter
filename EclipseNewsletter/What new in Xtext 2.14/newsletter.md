@@ -153,12 +153,12 @@ He quickly writes down the link to [this blog post](https://blogs.itemis.com/en/
 ## One journey ends, but many more will follow!
 Having explored all the interesting new features of Xtext and Xtend 2.14 Tim is excited to quickly use them all.
 Before he leaves his laptop to grab another coffee and plan the next steps for leveraging the new features he realizes two changes in the Xtext team.
-With Christian Dietrich becoming co-project lead after more than 10 years of supporting and enhancing Xtext the project envisions a prosper and feature-rich future.
-Additionally, Arne Deutsch who added more than 60 pull requests in the last 12 month was elected as new committer by the Xtext team.
+With Christian Dietrich [becoming co-project lead](https://blogs.itemis.com/en/becoming-xtext-co-project-lead) after more than 10 years of supporting and enhancing Xtext the project envisions a prosper and feature-rich future.
+Additionally, Arne Deutsch who added more than 60 pull requests in the last 12 month was [elected](https://projects.eclipse.org/projects/modeling.tmf.xtext/elections/election-arne-deutsch-committer-eclipse-xtext) as new committer by the Xtext team.
 Witnessing the on-going support and commitment of all Xtext contributors reaffirms Tims wish to experience more journeys like the one he just finished.
 
 ## Start your own journey
 If you find yourself thinking I would love to take a trip like Tim did, 
 feel free to explore all the details of the Xtext 2.14 release starting from the [Xtext](https://www.eclipse.org/Xtext/releasenotes.html) or [Xtend](https://www.eclipse.org/xtend/releasenotes.html) release notes.
-In case you are more of a guided tour person, you should watch the webinar held by the Xtext committers Karsten Thoms and Holger Schill.
+In case you are more of a guided tour person, you should watch the [webinar](https://www.youtube.com/watch?v=Isxverh09e4) held by the Xtext committers Karsten Thoms and Holger Schill.
 Alternatively, if you want to add a social component to your journey and you happen to be around in Bonn on July 9th join the [Eclipse Demo Camp](https://wiki.eclipse.org/Eclipse_DemoCamps_2018/Bonn) which will also have a focus on the Xtext 2.14 release.
