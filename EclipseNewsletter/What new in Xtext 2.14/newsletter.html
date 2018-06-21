@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>newsletter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>What's new in Xtext and Xtend 2.14</h1>
+<h2>The journey of Tim Toolsmith</h2>
+<p>Tim Toolsmith is one of those typical developers.
+He loves to code in the office, on the train, during a long flight or even while sitting on his sunny terrace during his vacation.
+Tim takes great pleasure in using the latest programming languages, frameworks, and IDEs for manufacturing innovative solutions.
+Essential parts of his toolbox are Xtext and Xtend which he uses to tailor domain-specific languages for a wide variety of usage scenarios.
+However, the last two releases of Xtext and Xtend have been difficult for Tim, since they were mainly concerned with bug fixes and internal performance improvements and offered only a limited amount of cutting-edge features.
+The good news for Tim is that the 2.14 release comes with a whole bunch of new features and support for the latest framework versions Xtext and Xtend are build upon.
+So join Tim's journey to explore the new Xtext and Xtend features.</p>
+<h2>An Evolved Foundation</h2>
+<p>Since Tim is a classic early adopter he is always using the latest Java version.
+Therefore, Tim is really excited about the 2.14 release since it comes with the ability to compile with and against Java 9 &amp; 10.
+Of course, he is aware of the prerequisites and restrictions:</p>
+<ul>
+<li>Currently, there is no native support for Java 9/10 </li>
+<li>A current Maven version (has been tested with 3.5) </li>
+<li>Gradle must be at least version 4.7</li>
+<li>Java 9 requires Tycho 1.1 or newer and Java 10 requires Tycho 1.2</li>
+<li>Java 9 with at least Oxygen.1a and Java 10 with at least Oxygen.3a (As an early adapter, Tim, of course, goes for Eclipse Photon that works for both)</li>
+<li>Java 10 requires <code>org.objectweb.asm</code> library in version 6.1.1</li>
+</ul>
+<p>After realizing that fulfilling all the prerequisites is a piece of cake for him, he discovers another great feature.
+Xtext 2.14 ships with support for JUnit 5 which itself comes with a lot of <a href="https://junit.org/junit5/docs/snapshot/release-notes/index.html">new features</a>.
+Tim is very delighted to see that the project wizard was updated accordingly.
+Moreover, the projects created by the wizard only depend on the JUnit 5 artifact (<code>org.junit.jupiter:junit-jupiter-api:5.0.0</code>).
+Thereby, all dependencies are configured by the JUnit library container which lowers the coupling to concrete JUnit versions.</p>
+<p><img src="./2_14_wizard_junit5.gif" alt="JUnit 5" /></p>
+<p>Before continuing his journey, he reminds himself to remember this <a href="https://blogs.itemis.com/en/xtext-2.14-adds-support-for-junit-5">blog post</a> which offers interesting details on the JUnit 5 integration.</p>
+<h2>Exploring the Grammar Enhancements</h2>
+<p>After updating the technical foundation, Tim is excited to see what Xtext 2.14 offers for the foundation of every Xtext language - the grammar.
+He is very happy to see that Xtext 2.14 comes with a <code>@Deprecated</code> annotation which Tim missed from the beginning.</p>
+<p><img src="./2_14_annotation_deprecated.png" alt="Deprecated" /></p>
+<p>In addition, he is grateful for being able to customize the severity of the message displayed when referring to a deprecated rule through the Xtext preference page.</p>
+<p><img src="./2_14_annotation_preference.png" alt="Preferences" /></p>
+<p>Tim is even more delighted to see that with the <code>@Final</code> annotation it is now possible to prevent certain rules from being overwritten.</p>
+<p><img src="./2_14_annotation_final.png" alt="Final" /></p>
+<p>The third new grammar feature that attracts Tims attention is the brand-new <code>@Exported</code> annotation.
+If Tim wanted to export features to the index in the past, he had to manually come up with an <code>IDefaultResourceDescriptionStrategy</code> implementation.
+Now using the <code>@Exported</code> annotation will generate the basic infrastructure to publish custom objects to the index.
+All Tim has to keep in mind is that only those grammar rules annotated with <code>@Exported</code> will be available on the index. </p>
+<h2>Examining the Eclipse Integration</h2>
+<p>Having tested the new grammar features Tim is thrilled to see what enhancements were made regarding the Eclipse integration.</p>
+<p>At first sight, he cannot believe what he is seeing.
+After two releases of only a few new features, he finally found something that makes his early adapter heart beat faster.
+Xtext 2.14 is one of the first to integrate the newly introduced <em>Code Mining</em> feature.
+The API allows Tim to add additional semantic information into the text, which is not part of the text itself.
+Tim thoughts start to run.
+There are so many situations in which he can leverage <em>Code Mining</em>.</p>
+<ul>
+<li>Show the inferred return type of a function based on its content.</li>
+<li>Display parameter names in the context of a function call.</li>
+<li>Present the number of incoming or outgoing references of a method</li>
+<li>....</li>
+</ul>
+<p><img src="./2_14_domainmodel-codemining.gif" alt="Code Mining" /></p>
+<p>Tim only has to add the <code>org.eclipse.xtext.xtext.generator.ui.codemining.CodeMiningFragment</code> to his generator workflow and all the required dependencies and a stub implementation will be added to his Xtext project.
+Tim also realizes that there is a <a href="https://blogs.itemis.com/en/code-mining-support-in-xtext">blog post</a> providing more details on how to leverage code mining.
+But before he jumps right in to get his hands dirty, he wants to continue his journey of exploring all the new Xtext features.</p>
+<p>While inspecting the next feature Tim realizes that he took the right decision.
+Xtext 2.14 ships with support for specifying &quot;New Project&quot; and &quot;New File&quot; wizards without the need to write tons of SWT code.
+Tim only has to add two simple modules to his generator workflow and the infrastructure encapsulating the UI implementation for creating Eclipse projects and files for his specific DSL is generated.</p>
+<pre><code>language = StandardLanguage {
+    name = &quot;org.xtext.example.mydsl.MyDsl&quot;
+    fileExtensions = &quot;mydsl&quot;
+
+    fileWizard = {
+        generate = true
+    }
+    projectWizard = {
+        generate = true
+    }
+}   
+</code></pre>
+
+<p>Instead of fiddling around with SWT widgets, the user interface for &quot;New Project&quot; and &quot;New File&quot; wizard can be defined using a concise API.
+Moreover, the API allows Tim to specify the structure of the projects and the content of the files with so-called templates.</p>
+<p>Based on the descriptions seamlessly integrated wizards will be provided in the runtime.
+The wizard to create projects, for example, allows selecting from the templates specified by Tim.</p>
+<p><img src="./2_14_new-project-wizard-template-selection.png" alt="New Project Wizard" /></p>
+<p>The wizard to create files is more simple in its basic form and skips the template selection if there is - as in most cases - only one file template.</p>
+<p><img src="./2_14_new-file-wizard.png" alt="New File Wizard" /></p>
+<p>At this point, Tim realizes that the number of new features in Xtext 2.14 is overwhelming.
+So before he continues to inspect the other cool new stuff, he notes the blog posts for the <a href="https://blogs.itemis.com/en/generating-a-new-project-wizard-with-xtext-2.14">&quot;New Project&quot;</a> wizard and the <a href="https://blogs.itemis.com/en/new-file-wizard-easy-to-generate-with-xtext-2.14">&quot;New File&quot;</a> wizard which provide more detailed information on the matter.</p>
+<p>Continuing his exploration of new Xtext features he discovers the Create Action Quickfix.
+Tim knows from a lot of situations like the one displayed underneath. 
+Grammar rules that can be consumed without object instantiation usually require a <em>Create Action</em>.
+For example, a grammar rule that only contains an optional assigment will be marked with a warning message by the Xtext editor.
+Tim is really glad that with Xtext 2.14 the warning message is enhanced by a quick fix that automatically inserts the proper <em>Create Action</em>. </p>
+<p><img src="./2_14_create-action.gif" alt="Create Action" /></p>
+<p>Although Tim has witnessed a lot of large new features, he still has an eye for the detail.
+While experimenting with the new Xtext 2.14 he realizes that the Xtext Build console finally got a proper icon.</p>
+<p><img src="./2_14_console-icon.png" alt="Xtext Console Icon" /></p>
+<h2>Accelarating Tims journey</h2>
+<p>Tim as a passionate Xtext user implements domain-specific language workbenches at an industrial scale.
+Therefore, Tim is euphoric about the performance improvements incorporated in Xtext 2.14.
+One pain point he experienced in the past was caused by the access to <code>IOutputConfiguration</code> from the builder participant.
+The problem that depends on the number of files produced by code generators is now fixed by cache implementation within the <code>BuilderParticipant</code>.</p>
+<p>Further, the improvements for <code>QueuedBuiledData</code> regarding build times for a large number of resources will increase performance in Tims industry scale projects.
+Finally, Tim is looking forward to the performance improvements made in the area of semantic highlighting.
+He is keen to see the positive effects when editing large Xtend files.
+Since time is thinking about Xtend, he decides to move on to the improvements made in release 2.14.</p>
+<h2>What's new in Xtend - The journey continues</h2>
+<p>After going through all the new features and functions in Xtext, Tim is keen about the improvements included in Xtend 2.14.
+Before he starts exploring the features in detail he notes with satisfaction that Xtend also supports Java 9 &amp; 10.
+Having secured that Xtend is built on the same solid foundation as Xtext, Tim takes a closer look at the Xtend compiler feature.</p>
+<p>He quickly realizes that Xtend now supports Multi-Catch support. 
+Multi-Catch support allows the handling of multiple Exception classes in a single catch block.</p>
+<p><img src="./2_14_0_xtend-multi-catch-new.png" alt="Xtend Multi-Catch" /></p>
+<p>Given that Tim is an early adopter he founds himself thinking: &quot;Been there. Done that.&quot;
+However, he has to admit that applying the same concept to the type guard expressions of switch statements is exactly the kind of syntactical sugar he loves about Xtend.</p>
+<p><img src="./2_14_0_xtend-multi-type-guard-new.png" alt="Xtend Multi-Type Guard" /> </p>
+<p>Tim is a huge fan of the concise and semantically rich Xtend language.
+Especially avoiding unnecessary modifiers, such as &quot;public&quot; or &quot;final&quot; is a feature he uses extensively.
+However, every once in a while he falls back to old routines and explicitly specifies unnecessary modifiers.
+Therefore, Tim is really grateful as he realizes that Xtend 2.14 now marks unnecessary modifiers and even better, offers a quick-fix to remove them.</p>
+<p><img src="./2_14_unnecessary_modifier.png" alt="Unnecessary Modoifiers" /> </p>
+<p>Once again Tim is delighted to see that the severity for the unnecessary modifier markers can be customized through a preference page.
+He quickly writes down the link to <a href="https://blogs.itemis.com/en/xtend-2-14-unnecessary-modifiers-validation">this blog post</a> that describes the unnecessary modifier feature in more detail.</p>
+<h2>One journey ends, but many more will follow!</h2>
+<p>Having explored all the interesting new features of Xtext and Xtend 2.14 Tim is excited to quickly use them all.
+Before he leaves his laptop to grab another coffee and plan the next steps for leveraging the new features he realizes two changes in the Xtext team.
+With Christian Dietrich <a href="https://blogs.itemis.com/en/becoming-xtext-co-project-lead">becoming co-project lead</a> after more than 10 years of supporting and enhancing Xtext the project envisions a prosper and feature-rich future.
+Additionally, Arne Deutsch who added more than 60 pull requests in the last 12 month was <a href="https://projects.eclipse.org/projects/modeling.tmf.xtext/elections/election-arne-deutsch-committer-eclipse-xtext">elected</a> as new committer by the Xtext team.
+Witnessing the on-going support and commitment of all Xtext contributors reaffirms Tims wish to experience more journeys like the one he just finished.</p>
+<h2>Start your own journey</h2>
+<p>If you find yourself thinking I would love to take a trip like Tim did, 
+feel free to explore all the details of the Xtext 2.14 release starting from the <a href="https://www.eclipse.org/Xtext/releasenotes.html">Xtext</a> or <a href="https://www.eclipse.org/xtend/releasenotes.html">Xtend</a> release notes.
+In case you are more of a guided tour person, you should watch the <a href="https://www.youtube.com/watch?v=Isxverh09e4">webinar</a> held by the Xtext committers Karsten Thoms and Holger Schill.
+Alternatively, if you want to add a social component to your journey and you happen to be around in Bonn on July 9th join the <a href="https://wiki.eclipse.org/Eclipse_DemoCamps_2018/Bonn">Eclipse Demo Camp</a> which will also have a focus on the Xtext 2.14 release.</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
