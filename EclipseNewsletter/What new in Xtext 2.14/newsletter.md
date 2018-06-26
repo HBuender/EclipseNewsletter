@@ -17,7 +17,7 @@ Of course, he is aware of the prerequisites and restrictions:
 - A current Maven version (has been tested with 3.5) 
 - Gradle must be at least version 4.7
 - Java 9 requires Tycho 1.1 or newer and Java 10 requires Tycho 1.2
-- Java 9 with at least Oxygen.1a and Java 10 with at least Oxygen.3a (As an early adapter, Tim, of course, goes for Eclipse Photon that works for both)
+- Java 9 with at least Oxygen.1a and Java 10 with at least Oxygen.3a (As an early adopter, Tim, of course, goes for Eclipse Photon that works for both)
 - Java 10 requires `org.objectweb.asm` library in version 6.1.1
 
 After realizing that fulfilling all the prerequisites is a piece of cake for him, he discovers another great feature.
@@ -44,7 +44,7 @@ Tim is even more delighted to see that with the `@Final` annotation it is now po
  
 ![Final](./2_14_annotation_final.png)
 
-The third new grammar feature that attracts Tims attention is the brand-new `@Exported` annotation.
+The third new grammar feature that attracts Tim's attention is the brand-new `@Exported` annotation.
 If Tim wanted to export features to the index in the past, he had to manually come up with an `IDefaultResourceDescriptionStrategy` implementation.
 Now using the `@Exported` annotation will generate the basic infrastructure to publish custom objects to the index.
 All Tim has to keep in mind is that only those grammar rules annotated with `@Exported` will be available on the index. 
