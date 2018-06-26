@@ -135,7 +135,7 @@ Multi-Catch support allows the handling of multiple Exception classes in a singl
 
 ![Xtend Multi-Catch](./2_14_0_xtend-multi-catch-new.png)
 
-Given that Tim is an early adopter he founds himself thinking: "Been there. Done that."
+Given that Tim is an early adopter he found himself thinking: "Been there. Done that."
 However, he has to admit that applying the same concept to the type guard expressions of switch statements is exactly the kind of syntactical sugar he loves about Xtend.
 
 ![Xtend Multi-Type Guard](./2_14_0_xtend-multi-type-guard-new.png) 
