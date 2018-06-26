@@ -104,7 +104,7 @@ So before he continues to inspect the other cool new stuff, he notes the blog po
 Continuing his exploration of new Xtext features he discovers the Create Action Quickfix.
 Tim knows from a lot of situations like the one displayed underneath. 
 Grammar rules that can be consumed without object instantiation usually require a *Create Action*.
-For example, a grammar rule that only contains an optional assigment will be marked with a warning message by the Xtext editor.
+For example, a grammar rule that only contains an optional assignment will be marked with a warning message by the Xtext editor.
 Tim is really glad that with Xtext 2.14 the warning message is enhanced by a quick fix that automatically inserts the proper *Create Action*. 
 
 ![Create Action](./2_14_create-action.gif)
@@ -114,7 +114,7 @@ While experimenting with the new Xtext 2.14 he realizes that the Xtext Build con
 
 ![Xtext Console Icon](./2_14_console-icon.png)
 
-## Accelarating Tims journey
+## Accelerating Tims journey
 Tim as a passionate Xtext user implements domain-specific language workbenches at an industrial scale.
 Therefore, Tim is euphoric about the performance improvements incorporated in Xtext 2.14.
 One pain point he experienced in the past was caused by the access to `IOutputConfiguration` from the builder participant.
@@ -145,7 +145,7 @@ Especially avoiding unnecessary modifiers, such as "public" or "final" is a feat
 However, every once in a while he falls back to old routines and explicitly specifies unnecessary modifiers.
 Therefore, Tim is really grateful as he realizes that Xtend 2.14 now marks unnecessary modifiers and even better, offers a quick-fix to remove them.
 
-![Unnecessary Modoifiers](./2_14_unnecessary_modifier.png) 
+![Unnecessary Modifiers](./2_14_unnecessary_modifier.png) 
 
 Once again Tim is delighted to see that the severity for the unnecessary modifier markers can be customized through a preference page.
 He quickly writes down the link to [this blog post](https://blogs.itemis.com/en/xtend-2-14-unnecessary-modifiers-validation) that describes the unnecessary modifier feature in more detail.
@@ -153,7 +153,7 @@ He quickly writes down the link to [this blog post](https://blogs.itemis.com/en/
 ## One journey ends, but many more will follow!
 Having explored all the interesting new features of Xtext and Xtend 2.14 Tim is excited to quickly use them all.
 Before he leaves his laptop to grab another coffee and plan the next steps for leveraging the new features he realizes two changes in the Xtext team.
-With Christian Dietrich [becoming co-project lead](https://blogs.itemis.com/en/becoming-xtext-co-project-lead) after more than 10 years of supporting and enhancing Xtext the project envisions a prosper and feature-rich future.
+With Christian Dietrich [becoming co-project lead](https://blogs.itemis.com/en/becoming-xtext-co-project-lead)- after more than 10 years of supporting and enhancing Xtext the project envisions a prosper and feature-rich future.
 Additionally, Arne Deutsch who added more than 60 pull requests in the last 12 month was [elected](https://projects.eclipse.org/projects/modeling.tmf.xtext/elections/election-arne-deutsch-committer-eclipse-xtext) as new committer by the Xtext team.
 Witnessing the on-going support and commitment of all Xtext contributors reaffirms Tims wish to experience more journeys like the one he just finished.
 
@@ -161,4 +161,4 @@ Witnessing the on-going support and commitment of all Xtext contributors reaffir
 If you find yourself thinking I would love to take a trip like Tim did, 
 feel free to explore all the details of the Xtext 2.14 release starting from the [Xtext](https://www.eclipse.org/Xtext/releasenotes.html) or [Xtend](https://www.eclipse.org/xtend/releasenotes.html) release notes.
 In case you are more of a guided tour person, you should watch the [webinar](https://www.youtube.com/watch?v=Isxverh09e4) held by the Xtext committers Karsten Thoms and Holger Schill.
-Alternatively, if you want to add a social component to your journey and you happen to be around in Bonn on July 9th join the [Eclipse Demo Camp](https://wiki.eclipse.org/Eclipse_DemoCamps_2018/Bonn) which will also have a focus on the Xtext 2.14 release.
+Alternatively, if you want to add a social component to your journey and you happen to be around in Bonn on July 9th join the [Eclipse Demo Camp](https://wiki.eclipse.org/Eclipse_DemoCamps_2018/Bonn)- which will also have a focus on the Xtext 2.14 release.
